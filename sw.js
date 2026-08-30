@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'g321theo2-v2.0.0';
+const CACHE_VERSION = 'g321theo2-v2.3.0';
 const CORE = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
