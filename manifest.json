@@ -1,0 +1,26 @@
+{
+  "name": "321學神神學（二）",
+  "short_name": "321神學二",
+  "description": "321學神神學第二冊：第七至十二部（L40–L85，共四十六課）——創造論、人論、罪論、苦難神學、基督論、救恩論",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#4B2A82",
+  "theme_color": "#4B2A82",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
