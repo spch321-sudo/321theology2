@@ -601,7 +601,7 @@ $('#back').onclick = () => route(CUR.tab);
 /* ===== 今日 ===== */
 function vToday(){
   TTL('321學神神學（二）');
-  const nextId = S.last || 'L01';
+  const nextId = (S.last && IDX.lessons.some(x=>x.id===S.last)) ? S.last : (IDX.lessons[0] ? IDX.lessons[0].id : 'L40');
   const m = EL(meta(nextId)), p = prog(nextId);
   const step = p.steps.length < 8 ? STEPS[p.steps.length] : null;
   const done = IDX.lessons.filter(l => prog(l.id).steps.length === 8).length;
@@ -2899,5 +2899,6 @@ function vAssure(){
 }
 
 </script>
+<script>/*__bootWatch*/window.__lastErr="";window.addEventListener("error",function(e){window.__lastErr=(e.message||"")+" @"+(e.filename||"").split("/").pop()+":"+(e.lineno||"");});window.addEventListener("unhandledrejection",function(e){window.__lastErr="Promise: "+((e.reason&&e.reason.message)||e.reason||"");});setTimeout(function(){var b=document.getElementById("boot");if(b&&b.parentNode&&getComputedStyle(b).opacity!=="0"){var d=document.createElement("div");d.style.cssText="max-width:82%;margin-top:18px;padding:12px 14px;background:rgba(0,0,0,.35);border-radius:12px;color:#FFE9A8;font-size:13px;line-height:1.6;text-align:left;word-break:break-all";d.textContent="啟動逾時。"+(window.__lastErr?("原因："+window.__lastErr):"未偵測到錯誤訊息——此環境可能不支援App運行（如檔案預覽視窗）。請以部署後的網址在 Safari 開啟。");b.appendChild(d);}},8000);</script>
 </body>
 </html>
